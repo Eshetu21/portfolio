@@ -1,28 +1,41 @@
+import Image from "next/image";
+
 export default function Contact() {
   const contactLinks = [
-    { name: "GitHub", url: "https://github.com/Eshetu21" },
+    { name: "GitHub", url: "https://github.com/Eshetu21", icon: "/github.png" },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/eshetu-tesema-538b962a6",
+      icon: "/linkedin.png",
     },
-    { name: "Telegram", url: "https://t.me/estar23" },
-    { name: "Email", url: "mailto:eshetutesema2@gmail.com" },
+    { name: "Telegram", url: "https://t.me/estar23", icon: "/telegram.png" },
+    {
+      name: "Email",
+      url: "mailto:eshetutesema2@gmail.com?subject=Hello&body=I want to connect!",
+      icon: "/email.png",
+    },
   ];
 
   return (
-    <div className="max-w-3xl mx-auto p-6 text-center">
-      <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
-      <p className="text-gray-600 mb-6">
-        Feel free to reach out via email or social platforms.
-      </p>
-      <div className="space-y-3">
+    <div className="max-w-2xl mx-auto p-8 text-center rounded-lg shadow-md">
+      <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
+      <p className="mb-6">Feel free to reach out. I'd love to connect!</p>
+      <div className="flex justify-center gap-6">
         {contactLinks.map((contact, index) => (
           <a
             key={index}
             href={contact.url}
-            className="block px-4 py-2 bg-blue-100 text-blue-700 rounded-md font-medium hover:bg-blue-200"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center space-y-2 text-white transition-transform transform hover:scale-110"
           >
-            {contact.name}
+            <Image
+              src={contact.icon}
+              alt={contact.name}
+              width={40}
+              height={40}
+            />
+            <span className="text-sm">{contact.name}</span>
           </a>
         ))}
       </div>
