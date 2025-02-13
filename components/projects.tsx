@@ -39,7 +39,7 @@ export default function Projects() {
         "An android application designed to visualize recent earthquake data from an online earthquake API",
       technologies: ["Flutter", "Dart", "LocalStorage"],
       image: "/eq.png",
-      link: "https://github.com/Eshetu21/DS-CHAT",
+      link: "https://github.com/Eshetu21/earthquake-mapper",
     },
     {
       title: "Whiteboard Sharing",
