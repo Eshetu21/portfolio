@@ -10,6 +10,14 @@ export default function Projects() {
       image: "/job.png",
       link: "https://github.com/Eshetu21/job-app",
     },
+{
+      title: "Earthquake Mapper",
+      description:
+        "An android application designed to visualize recent earthquake data from an online earthquake API",
+      technologies: ["Flutter", "Dart", "LocalStorage"],
+      image: "/eq.png",
+      link: "https://github.com/Eshetu21/earthquake-mapper",
+    },
     {
       title: "Hate Speech Detector",
       description:
@@ -32,14 +40,6 @@ export default function Projects() {
       ],
       image: "/chat.png",
       link: "https://github.com/Eshetu21/DS-CHAT",
-    },
-    {
-      title: "Earthquake Mapper",
-      description:
-        "An android application designed to visualize recent earthquake data from an online earthquake API",
-      technologies: ["Flutter", "Dart", "LocalStorage"],
-      image: "/eq.png",
-      link: "https://github.com/Eshetu21/earthquake-mapper",
     },
     {
       title: "Whiteboard Sharing",
