@@ -21,7 +21,7 @@ export default function Home() {
             Software Engineer | Mobile and Web Developer
           </p>
           <p className="text-gray-600 mt-2">
-            Hello! My name is Eshetu, and I build mobile and web applications. I
+            Hello! My name is Eshetu, I build mobile and web applications. I
             am passionate about creating user-friendly and scalable solutions
             that make an impact. Always eager to learn and explore new
             technologies, I strive to develop efficient and high-quality
