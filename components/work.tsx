@@ -1,5 +1,9 @@
 import Image from "next/image";
 
+interface WorkProps {
+  isDarkMode?: boolean;
+}
+
 export const work = [
   {
     company: "AASTU Software Engineers Association",
@@ -36,15 +40,19 @@ export const work = [
   },
 ];
 
-export default function WorkExperience() {
+export default function WorkExperience({ isDarkMode }: WorkProps) {
   return (
-    <div className="max-w-3xl mx-auto p-4">
+    <div
+      className={`max-w-3xl mx-auto p-4 ${isDarkMode} ?"text-white":"text-gray-900" `}
+    >
       <h2 className="text-xl font-bold text-center mb-4">Work Experience</h2>
       <div className="space-y-3">
         {work.map((job, index) => (
           <div
             key={index}
-            className="p-4 bg-white rounded-lg shadow-md border flex flex-col items-start"
+            className={`p-4 ${
+              isDarkMode ? "bg-gray-800" : "bg-white"
+            } rounded-lg shadow-md border flex flex-col items-start`}
           >
             <div className="flex items-center gap-3">
               <Image
@@ -61,16 +69,31 @@ export default function WorkExperience() {
                 href={job.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-violet-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-purple-600 px-0.5 py-1 rounded-md transition-all duration-300"
+                className={`${
+                  isDarkMode ? "text-white" : "text-violet-700"
+                } hover:text-white hover:bg-gradient-to-r from-blue-600 to-purple-600 px-0.5 py-1 rounded-md transition-all duration-300`}
               >
                 {job.company}
               </a>{" "}
-              - <span className="text-gray-500">{job.location}</span>
+              -{" "}
+              <span
+                className={`${isDarkMode ? "text-white" : "text-gray-500"}`}
+              >
+                {job.location}
+              </span>
             </p>
-            <p className="text-gray-500 text-xs">
+            <p
+              className={`${
+                isDarkMode ? "text-white" : "text-gray-500"
+              } text-xs`}
+            >
               {job.start} - {job.end}
             </p>
-            <p className="mt-2 text-gray-600 text-sm text-left">
+            <p
+              className={`mt-2 ${
+                isDarkMode ? "text-white" : "text-gray-600"
+              } text-sm text-left`}
+            >
               {job.description}
             </p>
           </div>
