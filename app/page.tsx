@@ -30,25 +30,24 @@ export default function Home() {
             Software Engineer | Mobile and Web Developer
           </p>
           <p className="text-gray-600 mt-2">
-            Hello! My name is Eshetu, I build mobile and web applications. I
-            am passionate about creating user-friendly and scalable solutions
-            that make an impact. Always eager to learn and explore new
-            technologies, I strive to develop efficient and high-quality
-            applications.
+            Hello! My name is Eshetu, I build mobile and web applications. I am
+            passionate about creating user-friendly and scalable solutions that
+            make an impact. Always eager to learn and explore new technologies,
+            I strive to develop efficient and high-quality applications.
           </p>
         </div>
       </div>
       <section className="mt-6">
-        <Skills />
+        <Skills isDarkMode />
       </section>
       <section className="mt-6">
-        <WorkExperience />
+        <WorkExperience isDarkMode />
       </section>
       <section className="mt-6">
-        <Projects />
+        <Projects isDarkMode />
       </section>
       <section className="mt-6">
-        <Contact />
+        <Contact isDarkMode />
       </section>
     </div>
   );
