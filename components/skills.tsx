@@ -34,7 +34,11 @@ export default function Skills({ isDarkMode }: { isDarkMode: boolean }) {
         {skills.map((skill, index) => (
           <motion.span
             key={index}
-            className=" bg-black text-white font-thin rounded-full text-center"
+            className={`px-3 py-1 rounded-full text-center text-sm shadow-md ${
+              isDarkMode ? "bg-gray-600" : "bg-black text-white"
+            }`}
+            whileHover={{ scale: 1.1 }}
+
           >
             {skill}
           </motion.span>
