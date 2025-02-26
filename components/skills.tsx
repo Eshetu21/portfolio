@@ -24,7 +24,10 @@ export default function Skills() {
         {skills.map((skill, index) => (
           <span
             key={index}
-            className=" bg-black text-white rounded-full text-center"
+             className={`px-3 py-1 rounded-full text-center text-sm shadow-md ${
+              isDarkMode ? "bg-gray-600" : "bg-black text-white"
+            }`}
+            whileHover={{ scale: 1.1 }}
           >
             {skill}
           </span>
