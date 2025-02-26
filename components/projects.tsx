@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Projects() {
+export default function Projects({ isDarkMode }: { isDarkMode: boolean }) {
   const projects = [
     {
       title: "Job Portal",
@@ -58,7 +58,9 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white shadow-lg rounded-xl overflow-hidden text-sm transition-transform transform hover:scale-105"
+            className={`${
+              isDarkMode ? "bg-gray-800" : "bg-white"
+            } shadow-lg rounded-xl overflow-hidden text-sm transition-transform transform hover:scale-105`}
           >
             <Image
               src={project.image}
@@ -69,14 +71,20 @@ export default function Projects() {
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold">{project.title}</h3>
-              <p className="text-gray-600 mt-2 text-sm">
+              <p
+                className={` ${
+                  isDarkMode ? "text-white" : " text-gray-600"
+                } mt-2 text-sm`}
+              >
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-2 mt-3">
                 {project.technologies.map((tech, i) => (
                   <span
                     key={i}
-                    className="px-3 py-1 bg-black text-white rounded-full text-xs"
+                    className={`px-3 py-1 ${
+                      isDarkMode ? "bg-gray-600 " : "bg-black"
+                    } text-white" text-white rounded-full text-xs`}
                   >
                     {tech}
                   </span>
@@ -85,7 +93,13 @@ export default function Projects() {
               <a
                 href={project.link}
                 target="_blank"
-                className="inline-block text-center mt-4 px-4 py-2 bg-white text-black border text-xs font-medium rounded-full transition-colors duration-300 hover:bg-black hover:text-white"
+                className={`inline-block text-center mt-4 px-4 py-2 border text-xs font-medium rounded-full transition-colors duration-300
+                   ${
+                     isDarkMode
+                       ? "bg-gray-600 text-white hover:bg-white hover:text-black"
+                       : "bg-white text-black hover:bg-black hover:text-white"
+                   }
+                         `}
               >
                 View Source Code
               </a>
