@@ -13,7 +13,7 @@ export default function Projects({ isDarkMode }: { isDarkMode: boolean }) {
 {
       title: "Earthquake Mapper",
       description:
-        "An android application designed to visualize recent earthquake data from an online earthquake API",
+        "A mobile app designed to visualize recent earthquake data from an online earthquake API",
       technologies: ["Flutter", "Dart", "LocalStorage"],
       image: "/eq.png",
       link: "https://github.com/Eshetu21/earthquake-mapper",
