@@ -44,11 +44,10 @@ export default function Home() {
               Software Engineer | Mobile & Web Developer
             </p>
             <p className={`${isDarkMode ? "text-white" : "text-gray-600"}`}>
-              Hello! My name is Eshetu, I build mobile and web applications. I
-              am passionate about creating user-friendly and scalable solutions
-              that make an impact. Always eager to learn and explore new
-              technologies, I strive to develop efficient and high-quality
-              applications.
+              Hello! My name is Eshetu, I'm a passionate developer specializing
+              in both mobile and web applications. With expertise in Flutter, I
+              build scalable and high-performance mobile applications that
+              provide seamless user experiences.
             </p>
           </div>
         </motion.div>
@@ -68,3 +67,4 @@ export default function Home() {
     </div>
   );
 }
+

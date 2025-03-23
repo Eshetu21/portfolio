@@ -6,15 +6,26 @@ interface WorkProps {
 
 export const work = [
   {
+    company: "Amba-lay Maps",
+    href: "https://www.ambalaymaps.com/",
+    location: "Addis Ababa, Ethiopia",
+    title: "Mobile Developer",
+    logoUrl: "/amba.jpg",
+    start: "March 2025",
+    end: "Present",
+    description:
+      "Developing a mapping system with navigation features that records all API requests and visualizes the data using charts, enhancing real-time data analysis and user insights.",
+  },
+  {
     company: "AASTU Software Engineers Association",
     href: "https://aastu.software",
     location: "AASTU",
-    title: "Mobile App Developer",
+    title: "Mobile Developer",
     logoUrl: "/asea.jpg",
     start: "Nov 2024",
     end: "Present",
     description:
-      "Designed and developed a Flutter-based multi-tenant logistics system, integrating real-time data synchronization and optimizing app performance.",
+      "Designed and developed a Flutter based e-commerce system, integrating real-time data synchronization and optimizing app performance.",
   },
   {
     company: "Micro sun and solutions PLC",
@@ -102,3 +113,4 @@ export default function WorkExperience({ isDarkMode }: WorkProps) {
     </div>
   );
 }
+

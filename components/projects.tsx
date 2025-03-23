@@ -10,13 +10,21 @@ export default function Projects({ isDarkMode }: { isDarkMode: boolean }) {
       image: "/job.png",
       link: "https://github.com/Eshetu21/job-app",
     },
-{
+    {
       title: "Earthquake Mapper",
       description:
         "A mobile app designed to visualize recent earthquake data from an online earthquake API",
-      technologies: ["Flutter", "Dart", "LocalStorage"],
+      technologies: ["Flutter", "Dart","API", "LocalStorage"],
       image: "/eq.png",
       link: "https://github.com/Eshetu21/earthquake-mapper",
+    },
+    {
+      title: "Event Ticketing App",
+      description:
+        "An app that allows users to browse events, purchase tickets, and engage with event organizers.",
+      technologies: ["Flutter", "Dart", "Supabase","Bloc","Clean Architecture"],
+      image: "/ticket.png",
+      link: "https://github.com/Eshetu21/event-ticketing-app",
     },
     {
       title: "Hate Speech Detector",
@@ -110,3 +118,4 @@ export default function Projects({ isDarkMode }: { isDarkMode: boolean }) {
     </div>
   );
 }
+
