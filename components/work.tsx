@@ -6,10 +6,35 @@ interface WorkProps {
 
 export const work = [
   {
+    company: "Swachh Kabadi",
+    href: "https://www.swachhkabadi.com/",
+    location: "India, Remote",
+    title: "Mobile Developer ",
+    logoUrl: "/swachh-logo.jpg",
+    start: "March 2025",
+    end: "Present",
+    description: (
+      <>
+        Worked on key user-side features of the live app and built the Admin
+        Manager app from scratch for a fast-growing Indian startup. Check the
+        user-side app on the{" "}
+        <a
+          href="https://play.google.com/store/apps/details?id=com.swachhkabadi.scrapwala"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline text-blue-400 hover:text-blue-600"
+        >
+          Google Play Store
+        </a>
+        .
+      </>
+    ),
+  },
+  {
     company: "Amba-lay Maps",
     href: "https://www.ambalaymaps.com/",
     location: "Addis Ababa, Ethiopia",
-    title: "Mobile Developer",
+    title: "Assistant Mobile Developer",
     logoUrl: "/amba.jpg",
     start: "March 2025",
     end: "Present",
@@ -23,7 +48,7 @@ export const work = [
     title: "Mobile Developer",
     logoUrl: "/asea.jpg",
     start: "Nov 2024",
-    end: "Present",
+    end: "Feb 2025",
     description:
       "Designed and developed a Flutter based e-commerce system, integrating real-time data synchronization and optimizing app performance.",
   },
