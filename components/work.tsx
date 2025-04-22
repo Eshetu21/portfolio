@@ -15,7 +15,7 @@ export const work = [
     end: "Present",
     description: (
       <>
-        Worked on key user-side features of the live app and built the Admin
+        Worked on key features of the live user-side app and developed the Admin
         Manager app from scratch for a fast-growing Indian startup. Check the
         user-side app on the{" "}
         <a
