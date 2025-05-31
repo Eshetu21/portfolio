@@ -3,6 +3,20 @@ import Image from "next/image";
 export default function Projects({ isDarkMode }: { isDarkMode: boolean }) {
   const projects = [
     {
+      title: "Kabad Manager",
+      description:
+        "KabadManager is the admin app for Swachh Kabadi, enabling authorized staff to manage operations, monitor activity, and analyze data in real-time",
+      technologies: [
+        "Flutter",
+        "Supabase",
+        "Firebase",
+        "Clean Architecture",
+        "BLoc",
+      ],
+      image: "/manager.png",
+      link: "https://github.com/Eshetu21/swachh-manager",
+    },
+    {
       title: "Job Portal",
       description:
         "An app built with Flutter and Laravel, allowing users to search for jobs.",
@@ -14,7 +28,7 @@ export default function Projects({ isDarkMode }: { isDarkMode: boolean }) {
       title: "Earthquake Mapper",
       description:
         "A mobile app designed to visualize recent earthquake data from an online earthquake API",
-      technologies: ["Flutter", "Dart","API", "LocalStorage"],
+      technologies: ["Flutter", "Dart", "API", "LocalStorage"],
       image: "/eq.png",
       link: "https://github.com/Eshetu21/earthquake-mapper",
     },
@@ -22,7 +36,13 @@ export default function Projects({ isDarkMode }: { isDarkMode: boolean }) {
       title: "Event Ticketing App",
       description:
         "An app that allows users to browse events, purchase tickets, and engage with event organizers.",
-      technologies: ["Flutter", "Dart", "Supabase","Bloc","Clean Architecture"],
+      technologies: [
+        "Flutter",
+        "Dart",
+        "Supabase",
+        "Bloc",
+        "Clean Architecture",
+      ],
       image: "/ticket.png",
       link: "https://github.com/Eshetu21/event-ticketing-app",
     },
